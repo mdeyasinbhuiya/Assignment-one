@@ -132,3 +132,133 @@ align-content: center;
     opacity: 0.7;
 }
 /* section one complete */
+/* section two start from here */
+.section-two{
+    width: 1280px;
+    margin: 0px auto 80px;
+}
+.s2-title{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.s2-description{
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.7;
+    margin-bottom: 32px;
+}
+
+.s2-icon{
+    width: 50px;
+    height: 54px;
+    margin-bottom: 25px;
+}
+.s2-card-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.s2-card-description{
+    font-weight: 16px;
+    margin-bottom: 43px;
+    opacity: 0.7;
+}
+.s2-card-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.s2-first-card{
+    width: 346px;
+    height: 256px;
+    border-radius: 16px;
+    background-color: #548ff530;
+    padding: 32px;
+}
+.s2-second-card{
+    width: 346px;
+    height: 256px;
+    border-radius: 16px;
+    background-color: #C6E4D6;
+    padding: 32px;
+}
+.s2-third-card{
+    width: 346px;
+    height: 256px;
+    border-radius: 16px;
+    background-color: #F7EBCF
+    ;
+    padding: 32px;
+}
+.s2-card-blue-btn{
+    color: white;
+    background-color: #5490F5;
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+.s2-card-green-btn{
+    color: white;
+    background-color: #09A15C;
+    margin-top: 20px;
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+.s2-card-orange-btn{
+    color: white;
+    background-color: #FFC239;
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+.s2-card-orange-btn:hover{
+    background-color: darkorange;
+}
+.s2-card-green-btn:hover{
+    background-color: darkgreen;
+}
+.s2-card-blue-btn:hover{
+    background-color: darkblue;
+}
+.first-article{
+    width: 1220px;
+    height: 200px;
+    background-image: url("assets/quote-bg.png");
+    background-repeat: no-repeat;
+    background-position: top 20px left 20px;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.316);
+    border-radius: 16px;
+    margin-bottom: 80px;
+    padding: 0px 30px 0px;
+}
+.article-description{
+    font-size: 16px;
+    opacity: 0.8;
+    margin-top: 48px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.dr-yunus{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    opacity: 0.8;
+}
+.profession{
+    font-size: 16px;
+    opacity: 0.6;
+}
+/* section two complete */
+/* section three start form here */
