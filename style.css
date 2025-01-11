@@ -316,11 +316,90 @@ thead tr th{
     font-size: 18px;
     font-weight: 500;
     padding: 10px 14px;
-    background-color: #09A15C15;
+    background-color: #09a15d3d;
     border: 2px solid black;
     border-radius: 4px;
     margin-left: 70px;
 
     
 }
+/* section three complete */
+
+/* section four start from here */
+
+.section-four{
+    width: 1280px;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+.s4-title{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.s4-description{
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.7;
+    margin-bottom: 32px;
+}
+.cs4-card{
+    width: 1184px;
+    height: 306px;
+    background-color: white;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 48px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.s4-card-pic{
+    width: 408px;
+    height: 306px;
+}
+.s4-card-content{
+    width: 744px;
+    height: 266px;
+}
+.s4-card-pic img{
+    border-radius: 24px;
+}
+.s4-card-title{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.s4-card-content time{
+    margin-right:10px;
+   
+
+}
+.time{
+    font-size: 16px;
+    opacity: 0.7;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+.s4-card-description{
+    font-size: 16px;
+    margin-bottom:32px;
+    opacity: 0.7;
+}
+.s4-btn{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #006A50;
+    border-radius: 8px;
+    border:none;
+    padding: 13px 26px;
+    cursor: pointer;
+}
+.s4-btn:hover{
+    background-color: #014433;
+}
+/* section four complete */
+
+/* section donet start form here */
 
