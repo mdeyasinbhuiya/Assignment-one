@@ -111,7 +111,7 @@ font-weight: bold;
     .banner{
         /* flex-direction: column; */
         flex-direction: column-reverse;
-        width: 90vw;
+        width: 85vw;
         height: auto;
         padding-top: 20px;
         padding-bottom: 10px;
@@ -349,9 +349,9 @@ align-content: center;
         gap: 20px;
         align-items: center;
     }
-    /* .s2-first-card{
-        width: 80vw;
-    } */
+    .s2-description{
+        width: 85vw;
+    }
     .s2-title{
         font-size: 2rem;
     }
@@ -360,6 +360,10 @@ align-content: center;
         height: auto;
         padding: 0px 10px 20px;
         margin-top: 10px;
+    }
+    .resize{
+       padding: 20px;
+        margin: auto;
     }
 }
 /* section two complete */
