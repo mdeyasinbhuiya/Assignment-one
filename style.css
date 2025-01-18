@@ -19,24 +19,43 @@ body{
 }
 
 .navbar .logo{
-font-size: 32px;
+font-size: 2rem;
 font-weight: bold;
 }
 
 .navbar .sign-in{
-    font-size: 18px;
-    font-weight: 500; padding: 10px 30px;
+    font-size: 1.12rem;
+    font-weight: 500; 
     background: transparent;
     border: 1px solid #006A50;
     color: #006A50;
     border-radius: 8px;
     cursor: pointer;
+    padding: 10px 30px;
 }
 .navbar .sign-in:hover{
     background-color: #C6E4D6;
 }
 
+@media screen and (max-width:576px) {
+    .navbar{
+        flex-direction: column;
+       gap: 10px;
+       text-align: center;
+       width: auto;
+       margin: 20px 20px 50px;
+    }
+    .navbar .sign-in{
+    width: 40vw;
+    margin: auto;
+    }
+}
+
+
 /* navbar section complete */
+
+
+
 
 /* banner section start */
 .banner{
@@ -55,13 +74,13 @@ font-weight: bold;
     
 }
 .banner-subtitle{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500px;
     opacity: 0.5;
     margin-bottom: 16px;
 }
 .banner-title{
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 24px;
 }
@@ -83,6 +102,37 @@ font-weight: bold;
     height: 400px;
    
 }
+.banner-pic img{
+    width: 90%;
+}
+
+
+@media screen and (max-width:576px) {
+    .banner{
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
+        width: 90vw;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+        justify-content: center;
+        
+    }
+    .banner-content{
+        width: 80vw;
+        height: auto;
+        /* margin-top: 10px; */
+    }
+    .banner-title{
+        font-size: 2.5rem;
+
+    }
+    .banner-pic img{
+        width: 80%;
+    }
+    
+}
 /* banner section comeplete */
 
 /* section one start from here */
@@ -96,7 +146,7 @@ align-content: center;
 
 }
 .s1-title{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 32px;
     height: 48px;
@@ -130,6 +180,32 @@ align-content: center;
     font-size: 14px;
     opacity: 0.7;
 }
+
+
+@media screen and (max-width:576px) {
+    .section-one{
+        width: 90vw;
+        height:auto;
+        margin: 50px auto 50px;
+        justify-content: center;
+        
+        
+    }
+    .s1-card-container{
+        flex-direction: column;
+        width: 90vw;
+        height: auto;
+        gap: 30px;
+        margin-top: 50px;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .s1-title{
+        font-size: 2rem;
+        /* padding-left: 20px; */
+        margin: 30px 35px 0px;
+    }
+}
 /* section one complete */
 /* section two start from here */
 .section-two{
@@ -137,7 +213,7 @@ align-content: center;
     margin: 0px auto 80px;
 }
 .s2-title{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 24px;
 }
@@ -259,6 +335,33 @@ align-content: center;
     font-size: 16px;
     opacity: 0.6;
 }
+
+
+@media screen and (max-width:576px) {
+    .section-two{
+        width: 90vw;
+        height: auto;
+        margin: auto;
+        align-content: center;
+    }
+    .s2-card-container{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    /* .s2-first-card{
+        width: 80vw;
+    } */
+    .s2-title{
+        font-size: 2rem;
+    }
+    .first-article{
+        width: 85vw;
+        height: auto;
+        padding: 0px 10px 20px;
+        margin-top: 10px;
+    }
+}
 /* section two complete */
 
 
@@ -272,7 +375,7 @@ align-content: center;
     height: 481px;
 }
 .s3-title{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 14px;
 }
@@ -329,6 +432,42 @@ thead tr th{
     background-color: #4fcc91;
     color: rgb(255, 255, 255);
 }
+
+
+@media screen and (max-width:576px){
+    .section-three{
+        width: 90vw;
+        height: auto;
+        margin: 0px auto 50px
+    }
+    .s3-title{
+        font-size: 2rem;
+    }
+    .s3-table{
+        width: 85vw;
+        height: auto;
+        padding: 10px;
+        
+    }
+    table{
+        width: 85vw;
+        height: auto;
+    }
+    thead tr{
+        padding: 10px;
+    }
+    tbody tr td{
+        padding: 10px;
+    }
+    thead tr th{
+        padding: 10px;
+    }
+    .dropdown{
+        margin: 5px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
 /* section three complete */
 
 /* section four start from here */
@@ -339,12 +478,12 @@ thead tr th{
     /* border: 1px solid black; */
 }
 .s4-title{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 24px;
 }
 .s4-description{
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     opacity: 0.7;
     margin-bottom: 32px;
@@ -360,15 +499,16 @@ thead tr th{
     align-items: center;
     margin-bottom: 24px;
 }
-.s4-card-pic{
+/* .s4-card-pic{
     width: 408px;
     height: 306px;
-}
+} */
 .s4-card-content{
     width: 744px;
     height: 266px;
 }
 .s4-card-pic img{
+    width: 100%;
     border-radius: 24px;
 }
 .s4-card-title{
@@ -405,6 +545,29 @@ thead tr th{
 .s4-btn:hover{
     background-color: #014433;
 }
+
+@media screen and (max-width:576px){
+    .section-four{
+        width: 90vw;
+        margin-top: 100px;
+    }
+    
+    .cs4-card{
+        flex-direction: column;
+        width: 85vw;
+        gap: 30px;
+        padding: 20px 10px;
+        height: auto;
+        text-align: center;
+    }
+    .s4-card-content{
+        width: 80vw;
+        height: auto;
+    }
+    #revers{
+        flex-direction: column-reverse;
+    }
+}
 /* section four complete */
 
 /* section donet start form here */
@@ -440,7 +603,7 @@ thead tr th{
     
 }
 .ammount{
-    font-size: 35px;
+    font-size: 2.2rem;
     font-weight: bold;
     padding: 40px 40px;
     border-radius: 16px;
@@ -481,6 +644,36 @@ thead tr th{
 .donet-btn:hover{
     background-color: #014433;
 }
+
+
+@media screen and (max-width:576px) {
+    .donet{
+        width: 90vw;
+        height: auto;
+        margin: 100px auto 50px;
+    }
+    .donet-title{
+        margin-bottom: 10px;
+    }
+    .donet-description{
+        width: 85vw;
+        padding: 10px;
+        margin:0px auto 40px;
+    }
+    .ammount-btn{
+        flex-direction: column;
+        width: 55vw;
+        height: auto;
+        gap: 50px;
+    }
+    .payment{
+        width: 85vw;
+        margin-bottom: 20px;
+    }
+    .ammount{
+        font-size: 1.8rem;
+    }
+}
 /* donet section complete */
 
 /* last section start form here */
@@ -501,7 +694,7 @@ thead tr th{
     text-align: center;
 }
 .last-title{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 16px;
 }
@@ -543,6 +736,27 @@ thead tr th{
     font-size: 16px;
     opacity: 0.7;
 }
+
+
+@media screen and (max-width:576px) {
+    .subscribe{
+        width: 90vw;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 100px auto 70px;
+    }
+    .subscribe-container{
+        width: 85vw;
+        height: auto;
+    }
+    .last-description{
+        width: 85vw;
+    }
+    .last-title{
+        font-size: 2rem;
+    }
+}
 /* main section overall complete */
 
 /* footer section start from here */
@@ -567,4 +781,12 @@ thead tr th{
     display: flex;
     gap: 20px;
     justify-content: center;
+}
+@media screen and (max-width:576px) {
+    .footer{
+        width: 100vw;
+    }
+    .footer-icon{
+        width: 70vw;
+    }
 }
