@@ -11,6 +11,12 @@ body{
     color: #0E0E0E;
 }
 /* header style start form here */
+
+
+/* sheared element */
+.hide{
+    display: none;
+}
 /* navbar section */
 .navbar{
         display: flex;
@@ -103,7 +109,7 @@ font-weight: bold;
    
 }
 .banner-pic img{
-    width: 90%;
+    width: 100%;
 }
 
 
@@ -128,11 +134,44 @@ font-weight: bold;
         font-size: 2.5rem;
 
     }
+    .banner-pic{
+        width: 85vw;
+    }
     .banner-pic img{
-        width: 80%;
+        width: 100%;
+        padding-top: 20px;
+        margin: 0px;
+    }
+}
+    @media screen and (min-width:576px) and (max-width:992px) {
+        .banner{
+            flex-direction: column-reverse;
+            width: 90vw;
+            height: auto;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            text-align: center;
+            justify-content: center;
+            
+        }
+        .banner-content{
+            width: 75vw;
+            height: auto;
+            /* margin-top: 10px; */
+        }
+       
+        .banner-pic{
+            width: 70vw;
+            margin-bottom: 20px;
+            align-content: center;
+        }
+        .banner-pic img{
+            width: 70%;
+            margin: 0px;
+        }
     }
     
-}
+
 /* banner section comeplete */
 
 /* section one start from here */
@@ -206,6 +245,32 @@ align-content: center;
         margin: 30px 35px 0px;
     }
 }
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .section-one{
+        width: 90vw;
+        height:auto;
+        margin: 100px auto 50px;
+        justify-content: center;
+        
+        
+    }
+        .s1-card-container{
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90vw;
+        height: auto;
+        gap: 30px;
+        margin-top: 50px;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .s1-card{
+        width: 35vw;
+    }
+
+}
 /* section one complete */
 /* section two start from here */
 .section-two{
@@ -218,7 +283,7 @@ align-content: center;
     margin-bottom: 24px;
 }
 .s2-description{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     opacity: 0.7;
     margin-bottom: 32px;
@@ -342,7 +407,16 @@ align-content: center;
         width: 90vw;
         height: auto;
         margin: auto;
-        align-content: center;
+    }
+    .s2-content{
+        width:75vw;
+        height: auto;
+        margin: 5px 5px 5px;
+        padding: 5px;
+    }
+    .s2-description{
+        font-size:14px;
+        height: auto;
     }
     .s2-card-container{
         flex-direction: column;
@@ -356,14 +430,40 @@ align-content: center;
         font-size: 2rem;
     }
     .first-article{
-        width: 85vw;
+        width: 80vw;
         height: auto;
         padding: 0px 10px 20px;
-        margin-top: 10px;
+        margin: 50px auto 80px;
+    }
+    .s2-card-green-btn{
+        margin-top:0px ;
     }
     .resize{
        padding: 20px;
         margin: auto;
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .section-two{
+        width: 90vw;
+        height: auto;
+        margin: 100px auto 50px;
+    }
+    .s2-card-container{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .resize{
+        width: 70vw;
+    }
+    .first-article{
+        width: 85vw;
+        height: auto;
+        padding: 0px 10px 20px;
+        margin: 50px auto 80px;
     }
 }
 /* section two complete */
@@ -446,16 +546,19 @@ thead tr th{
     }
     .s3-title{
         font-size: 2rem;
+       
     }
     .s3-table{
         width: 85vw;
         height: auto;
         padding: 10px;
+        margin: auto;
         
     }
     table{
-        width: 85vw;
+        width: 80vw;
         height: auto;
+        margin: auto;
     }
     thead tr{
         padding: 10px;
@@ -470,6 +573,45 @@ thead tr th{
         margin: 5px;
         padding: 10px;
         font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .section-three{
+        width: 90vw;
+        height: auto;
+        margin: 0px auto 50px
+    }
+    .s3-title{
+        font-size: 2rem;
+        padding-left: 15px;
+        margin-bottom: 20px;
+       
+    }
+    .s3-table{
+        width: 85vw;
+        height: auto;
+        padding: 10px;
+        margin: auto;
+     }
+    table{
+        width: 80vw;
+        height: auto;
+        margin: auto;
+    }
+    .dropdown{
+        margin: 5px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+    thead tr{
+        padding: 10px;
+    }
+    tbody tr td{
+        padding: 20px;
+    }
+    thead tr th{
+        padding: 20px;
     }
 }
 /* section three complete */
@@ -550,10 +692,18 @@ thead tr th{
     background-color: #014433;
 }
 
-@media screen and (max-width:576px){
+
+@media screen and (max-width:992px){
     .section-four{
         width: 90vw;
         margin-top: 100px;
+    }
+    .s4-description{
+        width: 85vw;
+        margin: 0px auto 30px;
+    }
+    .s4-title{
+        padding-left: 20px;
     }
     
     .cs4-card{
@@ -565,13 +715,54 @@ thead tr th{
         text-align: center;
     }
     .s4-card-content{
-        width: 80vw;
+        width: 70vw;
         height: auto;
     }
     #revers{
         flex-direction: column-reverse;
     }
 }
+    /* @media screen and (min-width:576px) and (max-width:992px){
+        .section-four{
+            width: 90vw;
+            margin: 100px auto 0px;
+            
+
+        }
+        .s4-title{
+
+            padding-left: 20px;
+        }
+            
+
+        
+        .s4-description{
+            width: 85vw;
+            margin:0px auto 30px;
+        }
+        .cs4-card{
+            flex-direction: column;
+            width: 80vw;
+            gap: 30px;
+            padding: 20px 10px;
+            height: auto;
+            text-align: center;
+           margin: 0px auto 50px;
+        }
+        #revers{
+            flex-direction: column-reverse;
+        } 
+        .s4-card-content{
+            width: 80vw;
+            height: auto;
+        }
+        .s4-card-pic{
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+    } */
+
+
 /* section four complete */
 
 /* section donet start form here */
@@ -678,6 +869,37 @@ thead tr th{
         font-size: 1.8rem;
     }
 }
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .donet{
+        width: 90vw;
+        height: auto;
+        margin: 100px auto 50px;
+    }
+    .donet-description{
+        width: 85vw;
+        padding: 10px;
+        margin:0px auto 40px;
+    }
+    .ammount-btn{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 55vw;
+        height: auto;
+        gap: 50px;
+        margin: 0px auto 50px;
+        
+    }
+    .ammount{
+        padding: 20px;
+        
+    }
+    .payment{
+        width: 85vw;
+        margin-bottom: 20px;
+    }
+
+}
 /* donet section complete */
 
 /* last section start form here */
@@ -743,7 +965,7 @@ thead tr th{
 }
 
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:992px) {
     .subscribe{
         width: 90vw;
         height: auto;
@@ -769,6 +991,7 @@ thead tr th{
        
     }
 }
+
 /* main section overall complete */
 
 /* footer section start from here */
@@ -794,7 +1017,7 @@ thead tr th{
     gap: 20px;
     justify-content: center;
 }
-@media screen and (max-width:576px) {
+@media screen and (max-width:992px) {
     .footer{
         width: 100vw;
     }
